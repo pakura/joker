@@ -1,0 +1,776 @@
+body{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #333333;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: geo;
+    src: url('../font/geo.ttf');
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 990px;
+    height: auto;
+    min-height: 200px;
+    background-image: url("../img/bg.png");
+    border-radius: 12px;
+    box-shadow: 0 0 10px 2px #000;
+}
+.container .Top_head{
+    float: left;
+    margin-left: 10px;
+    width: 970px;
+    height: 80px;
+    border-bottom: 1px solid #999;
+}
+.Logo{
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+.Logo img{
+    width: 200px;
+    margin-top: 28px;
+}
+.Main_WP{
+    float: left;
+    width: 970px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.Section_WP{
+    float: left;
+    width: 230px;
+    height: 200px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    cursor: pointer;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #333333;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-family: geo;
+}
+.Section_WP:hover{
+    opacity: 1;
+    background-color: #999;
+    box-shadow: 0 0 8px 2px #333333;
+}
+.Section_WP img{
+    width: 80px;
+    margin-top: 40px;
+}
+.clear{
+    clear: both;
+}
+.fotter{
+    margin-top: 20px;
+    border-top: 1px solid #999;
+    width: 100%;
+    height: 50px;
+}
+.fotter .fot{
+    float: left;
+    margin-left: 10px;
+    width: 950px;
+    height: 22px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #333;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    font-family: geo;
+    color: #ccc;
+}
+.topMenu{
+    float: right;
+    width: 700px;
+    height: 60px;
+    margin-top: 24px;
+}
+.topMenu .menu_item{
+    float: left;
+    width: auto;
+    height: 25px;
+    color: #000;
+    background-color: #FBAD49;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 9px;
+    font-family: geo;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 13px;
+
+}
+.topMenu .menu_item:hover{
+    background-color: #FF9000;
+}
+#Tables_container{
+    float: left;
+    width: 960px;
+    height: auto;
+}
+.Tables_WP{
+    float: left;
+    width: 960px;
+    height: 28px;
+    background-color: #FF9000;
+    margin: 5px;
+    color: #444;
+    text-shadow: 1px 1px 3px;
+    font-family: geo;
+    line-height: 28px;
+}
+.Tables_WP:nth-child(odd) {
+    background: url(http://subtlepatterns.com/patterns/old_moon.png);
+}
+
+.Tables_WP:nth-child(even) {
+    background: url(http://subtlepatterns.com/patterns/mochaGrunge.png);
+}
+.Play_BTN{
+    float: left;
+    width: 80px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    border-right: 1px solid #333333;
+}
+.Play_BTN:hover{
+    background-color: #CCC;
+}
+.Table_ID_WP{
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #333333;
+}
+.Table_date_WP{
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #333333;
+}
+.Table_detail_WP{
+    float: right;
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.Table_detail_WP:hover{
+    background-color: #CCC;
+}
+.detail_WP{
+    position: absolute;
+    margin-left: 345px;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
+    padding-left: 10px;
+    font-family: geo;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    display: none;
+}
+.opentable_WP{
+    position: absolute;
+    margin-left: 345px;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
+    padding-left: 10px;
+    font-family: geo;
+    padding-top: 20px;
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 24px;
+    display: none;
+}
+.Filter_WP{
+    width: 960px;
+    height: 35px;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: geo;
+    font-size: 13px;
+    padding-top: 7px;
+}
+input{
+    width: 110px;
+    height: 24px;
+    background-color: #CCCCCC;
+    border: 1px solid #FF9000;
+    outline: none;
+    color: #333;
+}
+.pagecounter{
+    float: left;
+    width: 970px;
+    height: 30px;
+    margin-top: 20px;
+}
+#nextbutton{
+    width: 100px;
+    height: 30px;
+    color: #FFF;
+    background-color: #FF9000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #333333;
+    text-align: center;
+    line-height: 30px;
+    font-family: geo;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+}
+#nextbutton:hover{
+    background-color: #ff5d2b;
+}
+.pulka{
+    float: left;
+    width: 280px;
+    height: 22px;
+    margin-bottom: 4px;
+    background-color: #FBAD49;
+    cursor: pointer;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.rounds{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    width: 250px;
+    height: 22px;
+    background-color: #0A804A;
+    cursor: pointer;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.btn{
+    background-color: #333;
+    border: 1px solid #FF9000;
+    height: 28px;
+    color: #FFF;
+    font-family: GEO_M;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #666;
+}
+
+
+.User_WP{
+    float: left;
+    width: 960px;
+    height: 24px;
+    background-color: #FF9000;
+    margin: 3px;
+    color: #444;
+    font-family: geo;
+    line-height: 24px;
+    font-size: 12px;
+}
+.User_WP:nth-child(odd) {
+    background-color: #bbb;
+}
+
+.User_WP:nth-child(even) {
+    background-color: #CCC;
+}
+.user_id{
+    float: left;
+    width: auto;
+    height: 100%;
+    padding-right: 10px;
+    text-align: center;
+    margin-left: 10px;
+    border-right: 1px solid #333333;
+}
+.UserName_WP{
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #333333;
+}
+.Balance_WP{
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #333333;
+}
+.Table_detail_WP{
+    float: right;
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.Table_detail_WP:hover{
+    background-color: #EEE;
+}
+.useLeft_WP{
+    float: left;
+    width: 485px;
+    height: auto;
+    min-height: 500px;
+}
+.userinfo{
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: #999;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #BBB;
+    font-family: geo;
+    font-size: 13px;
+    margin: 10px;
+}
+td{
+    text-align: center;
+}
+.userinfo span{
+    color: #FBAD49;
+    font-weight: bold;
+    font-size: 16px;
+}
+.userinfo activ{
+    color: #0A804A;
+
+}
+.userinfo deactiv{
+    color: red;
+}
+.PlayedTable_WP{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    width: 920px;
+    height: 268px;
+    background-color: #999;
+    border: 1px solid #666666;
+    font-family: geo;
+    font-size: 13px;
+    border-radius: 10px;
+}
+.PlayedTable_WP span{
+    color: #FBAD49;
+    font-weight: bold;
+    font-size: 16px;
+}
+#transaction{
+    float: left;
+    width:920px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#tablehistory{
+    float: left;
+    width:920px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.row{
+    float: left;
+    width: 900px;
+    height: 28px;
+    background-color: #CCC;
+    margin: 1px;
+    color: #393939;
+    font-family: geo;
+    font-size: 14px;
+    line-height: 28px;
+}
+.row .trid{
+    float: left;
+    width: 120px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row .balance{
+    float: left;
+    width: 150px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row .datetime{
+    float: left;
+    width: 300px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row .action{
+    float: right;
+    width: auto;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row:hover{
+    background-color: #DDD;
+}
+.TableHead{
+    float: left;
+    width: 970px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #555555;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: geo;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+}
+.tabletr{
+    float: left;
+    width: 963px;
+    height: 28px;
+    background-color: #aaaaaa;
+    color: #0a0a0a;
+    font-family: geo;
+    font-size: 13px;
+    line-height: 28px;
+    border-left: 4px solid #555555;
+    border-right: 4px solid #555555;
+}
+.tabletr:nth-child(even) {
+    background-color: #CCCCCC;
+}
+.tabletr:hover{
+    background-color: #444;
+}
+.datetd{
+    float: left;
+    width: 100px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+.raketd{
+    float: left;
+    width: 120px;
+    height: 120%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+.staketd{
+    float: left;
+    width: 100px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+.playernumtd{
+    float: left;
+    width: 120px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+.tablenumtd{
+    float: left;
+    width: 120px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+.deposittd{
+    float: left;
+    width: 120px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+.withdrowtd{
+    float: left;
+    width: 122px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+.footeroftable{
+    float: left;
+    width: 970px;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #555555;
+}
+.footeroftable #total{
+    float: left;
+    width: 940px;
+    height: 26px;
+    margin: 10px;
+    border: 1px solid #FF9000;
+    border-radius: 10px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-family: geo;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.footeroftable #avarage{
+    float: left;
+    width: 940px;
+    height: 26px;
+    margin: 10px;
+    margin-top: -2px;
+    border: 1px solid #FF9000;
+    border-radius: 10px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-family: geo;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.footeroftable #total b{
+    color: #FF9000;
+}
+.footeroftable #avarage b{
+    color: #FF9000;
+}
+
+.login_form{
+    width: 320px;
+    height: 140px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    height: 26px;
+    border-bottom: 1px solid #aaaaaa;
+    color: #FF9000;
+    font-family: geo;
+}
+.login:focus{
+    background: -webkit-linear-gradient(#313131, #222222, #313131);
+    background: -o-linear-gradient(#313131, #222222, #313131);
+    background: -moz-linear-gradient(#313131, #222222, #313131);
+    background: linear-gradient(#313131, #222222, #313131);
+}
+
+.loginbtn{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 320px;
+    color: #FFF;
+    font-family: geo;
+    height: 45px;
+    font-size: 18px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: -webkit-linear-gradient(#FFCC00, #E99A00, #FF9600);
+    background: -o-linear-gradient(#FFCC00, #E99A00, #FF9600);
+    background: -moz-linear-gradient(#FFCC00, #E99A00, #FF9600);
+    background: linear-gradient(#FFCC00, #E99A00, #FF9600);
+    text-shadow: 1px 1px 2px #333;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    box-shadow: 0 0 10px #E99A00;
+}
+.loginbtn:focus{
+    box-shadow: 0 0 10px #E99A00;
+}
+.att{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 308px;
+    height: auto;
+    padding: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orangered;
+    border-radius: 6px;
+    color: #DDD;
+    font-family: geo;
+}
+.admins_wp{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    background-color: #5E5E5E;
+
+}
+.admins_wp .admin{
+    float: left;
+    width: 944px;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #444444;
+    color: #FFF;
+    font-family: geo;
+    margin-bottom: 4px;
+}
+
+.admins_wp .admin_id{
+    float: left;
+    width: 50px;
+    height: 100%;
+    color: #FFF;
+    font-family: geo;
+}
+.admins_wp .admin_username{
+    float: left;
+    width: 200px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 17px;
+    cursor: default;
+    font-family: geo;
+    margin-right: 20px;
+}
+.admins_wp .admin_group{
+    float: left;
+    width: 100px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 17px;
+    cursor: default;
+    font-family: geo;
+}
+.admins_wp .admin_ip{
+    float: left;
+    width: 300px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 10px;
+    cursor: default;
+    font-family: geo;
+}
+.admins_wp .admin_edit{
+    float: right;
+    width: 100px;
+    height: 100%;
+    color: #FF9000;
+    cursor: pointer;
+}
+.admins_wp .admin_delete{
+    float: right;
+    width: 100px;
+    height: 100%;
+    color: #FF9000;
+    cursor: pointer;
+}
+.admins_header{
+    float: left;
+    margin-left: 10px;
+    width: 940px;
+    height: 24px;
+}
+
+@-webkit-keyframes animate-box-shadow
+{
+    0% { box-shadow: 0px 0px 2px #e74c3c;  }
+    50% { box-shadow: 0px 0px 10px 5px #e74c3c;  }
+    100% { box-shadow: 0px 0px 2px #e74c3c;  }
+}
+@-moz-keyframes animate-box-shadow
+{
+    0% { box-shadow: 0px 0px 2px #e74c3c;  }
+    50% { box-shadow: 0px 0px 10px 5px #e74c3c;  }
+    100% { box-shadow: 0px 0px 2px #e74c3c;  }
+}
+@-o-keyframes animate-box-shadow
+{
+    0% { box-shadow: 0px 0px 2px #e74c3c;  }
+    50% { box-shadow: 0px 0px 10px 5px #e74c3c;  }
+    100% { box-shadow: 0px 0px 2px #e74c3c;  }
+}
+@-ms-keyframes animate-box-shadow
+{
+    0% { box-shadow: 0px 0px 2px #e74c3c;  }
+    50% { box-shadow: 0px 0px 10px 5px #e74c3c;  }
+    100% { box-shadow: 0px 0px 2px #e74c3c;  }
+}
+@keyframes animate-box-shadow
+{
+    0% { box-shadow: 0px 0px 2px #e74c3c;  }
+    50% { box-shadow: 0px 0px 10px 5px #e74c3c;  }
+    100% { box-shadow: 0px 0px 2px #e74c3c;  }
+}
+.menu_item_alert{
+    -webkit-animation: animate-box-shadow 500ms linear 0ms infinite normal;
+    -moz-animation: animate-box-shadow 500ms linear 0ms infinite normal;
+    -ms-animation: animate-box-shadow 500ms linear 0ms infinite normal;
+    animation: animate-box-shadow 500ms linear 0ms infinite normal;
+}

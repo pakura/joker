@@ -1,0 +1,1207 @@
+body{
+    background-color: #393939;
+    background: url(../img/background1.png);
+}
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow: hidden;
+
+}
+@font-face {
+    font-family: GEO_M;
+    src: url(../fonts/GEO_M.ttf);
+}
+.container{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-image: url(../img/tablebg0.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #e74c3c;
+    border-radius: 10px;
+}
+#trump_card_WP{
+    position: absolute;
+    width: 60px;
+    height: 100px;
+}
+.position{
+    position: absolute;
+    border-radius: 40px;
+}
+.left_avatar_wp{
+    float: left;
+    background-color: #000;
+    opacity: 0.2;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.right_avatar_wp{
+    float: left;
+    background-color: #000;
+    opacity: 0.5;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.top_avatar_wp{
+    background-color: #000;
+    opacity: 0.5;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.down_avatar_wp{
+    background-color: #000;
+    opacity: 0.2;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+#setting_btn{
+    position: absolute;
+    background-image: url(../img/settingbtn0.png);
+    cursor: pointer;
+    z-index: 11;
+}
+#setting_btn:hover{
+    background-image: url(../img/settingbtn1.png);
+}
+#sound_btn{
+    position: absolute;
+    cursor: pointer;
+}
+.sound_btn{
+    background-image: url(../img/soundon.png);
+}
+.sound_btn:hover{
+    background-image: url(../img/soundonover.png);
+}
+.sound_btn_off{
+    background-image: url(../img/soundoff.png);
+}
+.sound_btn_off:hover{
+    background-image: url(../img/soundoffover.png);
+}
+
+#fullscreen_btn{
+    position: absolute;
+    background-image: url(../img/fullscreenbtn0.png);
+    cursor: pointer;
+}
+#fullscreen_btn:hover{
+    background-image: url(../img/fullscreenbtn1.png);
+}
+#close_btn{
+    position: absolute;
+    background-image: url(../img/close_btn0.png);
+    cursor: pointer;
+}
+#close_btn:hover{
+    background-image: url(../img/close_btn1.png);
+}
+#closeover_btn{
+    position: absolute;
+    background-image: url(../img/close_btn0.png);
+    cursor: pointer;
+    z-index: 999999;
+    display: none;
+
+}
+#closeover_btn:hover{
+    background-image: url(../img/close_btn1.png);
+}
+#bet_amount_WP{
+    position: absolute;
+    cursor: default;
+    color: #FFF;
+}
+#bet_top{
+    font-size: 18px;
+    font-family: GEO_M;
+    text-align: center;
+}
+#bet_mid{
+    font-size: 32px;
+    font-family: GEO_M;
+    text-align: center;
+}
+#bet_bottom{
+    font-size: 16px;
+    font-family: GEO_M;
+    text-align: center;
+}
+#balance_top{
+    font-family: GEO_M;
+    text-align: center;
+}
+#balance_mid{
+    font-family: GEO_M;
+    text-align: center;
+}
+#balance_bottom{
+    font-family: GEO_M;
+    text-align: center;
+}
+#my_balance_WP{
+    position: absolute;
+    cursor: default;
+    color: #FFF;
+}
+.avatar{
+    position: absolute;
+    border-radius: 100px;
+}
+.player_name{
+    position: absolute;
+    color: #FFF;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 2px 2px 3px #000;
+}
+.player_score{
+    position: absolute;
+    color: #EEEEEE;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+#player2_avatar, #player2_name, #player2_score, #player4_avatar, #player4_name, #player4_score{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+#paper_WP{
+    position: absolute;
+    background-color: #20633c;
+    border-radius: 8px;
+    height: auto;
+    z-index: 19999;
+    padding: 1px;
+    font-family: GEO_M;
+    cursor: pointer;
+    color: #CCC;
+    text-shadow: 1px 1px 2px #000;
+    max-height: 80%;
+    overflow-y: auto;
+}
+#paper_WP .stage_WP{
+    width: calc(100% - 4px);
+    height: 26%;
+    max-height: 26%;
+    position: relative;
+    float: left;
+    margin: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #16452a;
+    border-radius: 6px;
+}
+#paper_WP .stage_WP .round_CNT{
+    float: left;
+    width: 4%;
+    height: 250%;
+    background-color: #144027;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    text-align: center;
+}
+#paper_WP .stage_WP .score_mid{
+    float: left;
+    width: 19%;
+    height: auto;
+    padding-left: 3%;
+    border-right: 1px solid #113420;
+}
+#paper_WP .stage_WP .score_right{
+    float: left;
+    width: 19%;
+    height: auto;
+    text-align: left;
+    padding-left: 3%;
+}
+#paper_WP .total_score{
+    width: calc(100% - 4px);
+    height: 26%;
+    position: relative;
+    float: left;
+    background-color: #113420;
+    border-radius: 6px;
+    margin: 1px;
+    padding: 1px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+#paper_WP .total_score .total_score_mid{
+    float: left;
+    width: 19%;
+    height: auto;
+    padding-left: 3%;
+    border-right: 1px solid #16452a;
+}
+#paper_WP .total_score .total_score_right{
+    float: left;
+    width: 19%;
+    height: auto;
+    padding-left: 3%;
+}
+
+
+
+#adminPaper .stage_WP{
+    width: calc(100% - 4px);
+    height: 26%;
+    max-height: 26%;
+    position: relative;
+    float: left;
+    background-color: #16452a;
+    border-radius: 6px;
+    margin: 1px;
+    padding: 1px;
+}
+#adminPaper .stage_WP .round_CNT{
+    float: left;
+    width: 4%;
+    height: auto;
+    background-color: #144027;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    text-align: center;
+}
+#adminPaper .stage_WP .score_mid{
+    float: left;
+    width: 19%;
+    height: auto;
+    padding-left: 3%;
+    border-right: 1px solid #113420;
+}
+#adminPaper .stage_WP .score_right{
+    float: left;
+    width: 19%;
+    height: auto;
+    text-align: left;
+    padding-left: 3%;
+}
+#adminPaper .total_score{
+    width: calc(100% - 4px);
+    height: 26%;
+    max-height: 26%;
+    position: relative;
+    float: left;
+    background-color: #113420;
+    border-radius: 6px;
+    margin: 1px;
+    padding: 1px;
+}
+#adminPaper .total_score .total_score_mid{
+    float: left;
+    width: 19%;
+    height: auto;
+    padding-left: 3%;
+    border-right: 1px solid #16452a;
+}
+#adminPaper .total_score .total_score_right{
+    float: left;
+    width: 19%;
+    height: auto;
+    padding-left: 3%;
+}
+#Cards_for_player0{
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cards{
+    background-color: #E7E7E8;
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    margin-left: -3%;
+    box-shadow: 0 0 3px #333;
+    border-radius: 10%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.cards:hover{
+    top: -10%;
+}
+#Cards_for_player1, #Cards_for_player3{
+    position: absolute;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+#Cards_for_player2{
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* -ms-transform: rotate(270deg);
+     -webkit-transform: rotate(270deg);
+     transform: rotate(270deg);*/
+}
+.undercards_1, .undercards_3{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin-top: -40%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.undercards_2{
+    background-color: #E7E7E8;
+    position: relative;
+    display: inline-block;
+    width: calc(11% - 4px);
+    height: 100%;
+    margin-left: -3%;
+    border-radius: 10%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.undercards_1_0, .undercards_3_0{
+    background-image: url(../img/cards/rotateunder0.png);
+}
+.undercards_1_1, .undercards_3_1{
+    background-image: url(../img/cards/rotateunder1.png);
+}
+.undercards_1_2, .undercards_3_2{
+    background-image: url(../img/cards/rotateunder2.png);
+}
+.undercards_1_3, .undercards_3_3{
+    background-image: url(../img/cards/rotateunder3.png);
+}
+.undercards_1_4, .undercards_3_4{
+    background-image: url(../img/cards/rotateunder4.png);
+}
+
+.undercards_2_0{
+    background-image: url(../img/cards/under0.png);
+}
+.undercards_2_1{
+    background-image: url(../img/cards/under1.png);
+}
+.undercards_2_2{
+    background-image: url(../img/cards/under2.png);
+}
+.undercards_2_3{
+    background-image: url(../img/cards/under3.png);
+}
+.undercards_2_4{
+    background-image: url(../img/cards/under4.png);
+}
+#player0_thrown_card, #player1_thrown_card, #player2_thrown_card, #player3_thrown_card{
+    position: absolute;
+}
+#players_name{
+    position: absolute;
+
+    height: 20px;
+    z-index: 99999;
+}
+#players_name .playersname{
+    position: relative;
+    float: left;
+    width: 23%;
+    height: 100%;
+    color: #CCC;
+    font-weight: bold;
+    font-family: GEO_M;
+    text-shadow: 2px 2px 3px #000;
+}
+#claim_WP{
+    position: absolute;
+    box-shadow: 0 0 15px 5px #000;
+    border-radius: 10px;
+    opacity: 0.8;
+    line-height: 140%;
+    color: #CCC;
+    cursor: default;
+    text-align: center;
+    font-family: GEO_M;
+    display: none;
+    background: -webkit-linear-gradient(#333, #444, #333);
+    background: -o-linear-gradient(#333, #444, #333);
+    background: -moz-linear-gradient(#333, #444, #333);
+    background: linear-gradient(#333, #444, #333);
+}
+#claim_WP img{
+    cursor: pointer;
+}
+#ChooseHowMany_WP{
+    position: absolute;
+    box-shadow: 0 0 15px 5px #000;
+    border-radius: 10px;
+    opacity: 0.8;
+    line-height: 140%;
+    color: #CCC;
+    cursor: default;
+    text-align: center;
+    font-family: GEO_M;
+    display: none;
+    background: -webkit-linear-gradient(#333, #444, #333);
+    background: -o-linear-gradient(#333, #444, #333);
+    background: -moz-linear-gradient(#333, #444, #333);
+    background: linear-gradient(#333, #444, #333);
+}
+#ChooseHowMany_WP button{
+    position: relative;
+    width: 8%;
+    height: 50%;
+    background-color: #999;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: GEO_M;
+    background: -webkit-linear-gradient(#999, #CCC);
+    background: -o-linear-gradient(#999, #CCC);
+    background: -moz-linear-gradient(#999, #CCC);
+    background: linear-gradient(#999, #CCC);
+    outline: none;
+}
+#ChooseHowMany_WP button:hover{
+    background: -webkit-linear-gradient(#CCC, #fff);
+    background: -o-linear-gradient(#CCC, #fff);
+    background: -moz-linear-gradient(#CCC, #fff);
+    background: linear-gradient(#CCC, #fff);
+}
+#ChooseHowMany_WP button:disabled{
+    background: -webkit-linear-gradient(#999, #666);
+    background: -o-linear-gradient(#999, #666);
+    background: -moz-linear-gradient(#999, #666);
+    background: linear-gradient(#999, #666);
+    cursor: not-allowed;
+    color: #000;
+}
+#OnJokerAction_WP{
+    position: absolute;
+    box-shadow: 0 0 15px 5px #000;
+    border-radius: 10px;
+    opacity: 0.8;
+    cursor: default;
+    text-align: center;
+    font-family: GEO_M;
+    display: none;
+    background: -webkit-linear-gradient(#333, #444, #333);
+    background: -o-linear-gradient(#333, #444, #333);
+    background: -moz-linear-gradient(#333, #444, #333);
+    background: linear-gradient(#333, #444, #333);
+}
+#OnJokerAction_WP button{
+    position: relative;
+    width: 45%;
+    height: 70%;
+    background-color: #999;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: GEO_M;
+    font-size: 100%;
+    background: -webkit-linear-gradient(#999, #CCC);
+    background: -o-linear-gradient(#999, #CCC);
+    background: -moz-linear-gradient(#999, #CCC);
+    background: linear-gradient(#999, #CCC);
+    outline: none;
+}
+#OnJokerAction_WP button:hover{
+    background: -webkit-linear-gradient(#CCC, #fff);
+    background: -o-linear-gradient(#CCC, #fff);
+    background: -moz-linear-gradient(#CCC, #fff);
+    background: linear-gradient(#CCC, #fff);
+}
+#FirstJokerAction_WP{
+    position: absolute;
+    box-shadow: 0 0 15px 5px #000;
+    border-radius: 10px;
+    opacity: 0.8;
+    cursor: default;
+    font-family: GEO_M;
+    display: none;
+    background: -webkit-linear-gradient(#333, #444, #333);
+    background: -o-linear-gradient(#333, #444, #333);
+    background: -moz-linear-gradient(#333, #444, #333);
+    background: linear-gradient(#333, #444, #333);
+}
+#FirstJokerAction_WP img{
+    cursor: pointer;
+}
+#P0ThrownCardAnimate, #P1ThrownCardAnimate, #P2ThrownCardAnimate, #P3ThrownCardAnimate{
+    position: absolute;
+}
+.vetical_timer{
+    position: absolute;
+    background: -webkit-linear-gradient(#6baa3d , #38c15b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6baa3d , #38c15b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6baa3d , #38c15b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6baa3d , #38c15b); /* Standard syntax */
+    border-radius: 10px;
+    display: none;
+}
+.horizontal_timer{
+    position: absolute;
+    background: -webkit-linear-gradient(left, #6baa3d , #38c15b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #6baa3d , #38c15b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #6baa3d , #38c15b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #6baa3d , #38c15b); /* Standard syntax */
+    border-radius: 10px;
+    display: none;
+}
+.robotPlay{
+    position: absolute;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: -webkit-linear-gradient(#41AA50 , #369C44); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#41AA50 , #369C44); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#41AA50 , #369C44); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#41AA50 , #369C44); /* Standard syntax */
+    z-index: 9;
+    cursor: pointer;
+    color: #0D5D18;
+    font-family: GEO_M;
+    text-shadow: 1px 1px 3px #003107;
+    text-align: center;
+    line-height: 310%;
+    display: none;
+}
+.robotPlay:hover{
+    background: -webkit-linear-gradient(#68B773 , #5C9965); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#68B773 , #5C9965); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#68B773 , #5C9965); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#68B773 , #5C9965); /* Standard syntax */
+}
+.winner_WP{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40%;
+    background-color: #FFA319;
+    z-index: 9999;
+}
+#jokercall1{
+    position: absolute;
+    background-color: #FFA319;
+    opacity: 0.7;
+    color: #333;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+    font-family: GEO_M;
+    border-radius: 8px;
+    line-height: 250%;
+    z-index: 9;
+    display: none;
+}
+#jokercall2{
+    position: absolute;
+    background-color: #ff5d2b;
+    border-radius: 8px;
+    text-align: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    opacity: 0.7;
+    color: #333;
+    line-height: 250%;
+    font-family: GEO_M;
+    z-index: 9;
+    display: none;
+}
+#LastGoted{
+    position: absolute;
+    background-image: url("../img/cards/under2.png");
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+#LastGoted:hover{
+    opacity: 1;
+}
+#LastGot_WP{
+    position: absolute;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    opacity: 0.5;
+    display: none;
+}
+#LastGot_WP:hover{
+    opacity: 0.8;
+}
+.lastcard{
+    position: absolute;
+    width: 36%;
+    height: 54%;
+    background-image: url("../img/cards/under2.png");
+    background-size: 100% 100%;
+}
+#PLayer1_card{
+    top: 23%;
+    left: 5%;
+}
+#PLayer2_card{
+    top: 5%;
+    left: 31%;
+}
+#PLayer3_card{
+    top: 23%;
+    left: 59%;
+}#PLayer0_card{
+     top: 40%;
+     left: 31%;
+ }
+#Win_WP{
+    position: absolute;
+    background-image: url("../img/WinBG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+.WinPos{
+    position: absolute;
+    background-color: #333;
+    border-radius: 100%;
+    border: 3px solid #dadada;
+    z-index: 999;
+}
+.Win_Pos_Num_BG{
+    position: absolute;
+    background-image: url("../img/winposnumbg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: GEO_M;
+    color: #333;
+    line-height: 180%;
+    z-index: 999;
+}
+.wintext{
+    position: absolute;
+    color: #ffca2a;
+    font-family: GEO_M;
+    text-align: center;
+    line-height: 150%;
+    z-index: 999;
+}
+.wintext span{
+    color: #ccc;
+}
+.gameoverbg, .reloadbg{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    opacity: 0.7;
+    display: none;
+}
+.reloadbg{
+    display: block;
+}
+.table {
+    display: table;
+}
+
+.tableRow{
+    display: table-row;
+}
+#Game_info{
+    position: absolute;
+    z-index: 9;
+    font-family: GEO_M;
+    color: #CCC;
+    cursor: default;
+    text-align: center;
+}
+
+.bubblingG {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top: -20%; */
+    z-index: 999;
+    left: calc(50% - 75px);
+    position: absolute;
+    top: calc(50% - 25px);
+}
+.bubblingG center {
+    font-family: GEO_M;
+    color: #CCCCCC;
+    font-size: 16px;
+}
+.bubblingG span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: auto auto;
+    background: #FFFFFF;
+    -moz-border-radius: 50px;
+    -moz-animation: bubblingG 0.9s infinite alternate;
+    -webkit-border-radius: 50px;
+    -webkit-animation: bubblingG 0.9s infinite alternate;
+    -ms-border-radius: 50px;
+    -ms-animation: bubblingG 0.9s infinite alternate;
+    -o-border-radius: 50px;
+    -o-animation: bubblingG 0.9s infinite alternate;
+    border-radius: 50px;
+    animation: bubblingG 0.9s infinite alternate;
+}
+
+#bubblingG_1 {
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#bubblingG_2 {
+    -moz-animation-delay: 0.27s;
+    -webkit-animation-delay: 0.27s;
+    -ms-animation-delay: 0.27s;
+    -o-animation-delay: 0.27s;
+    animation-delay: 0.27s;
+}
+
+#bubblingG_3 {
+    -moz-animation-delay: 0.54s;
+    -webkit-animation-delay: 0.54s;
+    -ms-animation-delay: 0.54s;
+    -o-animation-delay: 0.54s;
+    animation-delay: 0.54s;
+}
+
+@-moz-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color:#FFFFFF;
+        -moz-transform: translateY(0);
+    }
+
+    100% {
+        width: 24px;
+        height: 24px;
+        background-color:#FF8C00;
+        -moz-transform: translateY(-21px);
+    }
+
+}
+
+@-webkit-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color:#FFFFFF;
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        width: 24px;
+        height: 24px;
+        background-color:#FF8C00;
+        -webkit-transform: translateY(-21px);
+    }
+
+}
+
+@-ms-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color:#FFFFFF;
+        -ms-transform: translateY(0);
+    }
+
+    100% {
+        width: 24px;
+        height: 24px;
+        background-color:#FF8C00;
+        -ms-transform: translateY(-21px);
+    }
+
+}
+
+@-o-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color:#FFFFFF;
+        -o-transform: translateY(0);
+    }
+
+    100% {
+        width: 24px;
+        height: 24px;
+        background-color:#FF8C00;
+        -o-transform: translateY(-21px);
+    }
+
+}
+
+@keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color:#FFFFFF;
+        transform: translateY(0);
+    }
+
+    100% {
+        width: 24px;
+        height: 24px;
+        background-color:#FF8C00;
+        transform: translateY(-21px);
+    }
+
+}
+.warning{
+    position: absolute;
+    border-radius: 100%;
+    background-image: url("../img/wrn.png");
+    z-index: 10;
+    cursor: pointer;
+}
+.warning:hover{
+    box-shadow: 0 0 3px 1px #FFA319;
+}
+
+#FullPaperBTN{
+    position: absolute;
+    background-color: #FFA319;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 9;
+    font-family: GEO_M;
+    text-align: center;
+    padding-top: 8px;
+    opacity: 0.7;
+    display: none;
+}
+#FullPaperBTN:hover{
+    opacity: 1;
+}
+#stoptableBTN{
+    position: absolute;
+    background-color: #FF8A01;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 9;
+    font-family: GEO_M;
+    text-align: center;
+    padding-top: 8px;
+    opacity: 0.7;
+    margin-left: 6px;
+    display: none;
+}
+#stoptableBTN:hover{
+    opacity: 1;
+}
+
+#adminPaper{
+    position: absolute;
+    background-color: #20633C;
+    border-radius: 6px;
+    height: auto;
+    overflow: auto;
+    overflow-x: hidden;
+    border: 2px solid #003107;
+    z-index: 9999;
+    display: none;
+    color: #CCC;
+    opacity: 0.8;
+}
+#stoptable_wp{
+    position: absolute;
+    height: auto;
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: #CCCCCC;
+    color: #333;
+    font-family: GEO_M;
+    border-radius: 10px;
+    z-index: 99;
+    opacity: 0.9;
+    display: none;
+}
+.stophead{
+    float: left;
+    width: 100%;
+    height: auto;
+    color: #FF9000;
+    text-align: center;
+}
+.selectplayer{
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.button_WP{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.stoptext{
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+#wrn1_wp{
+    position: absolute;
+    background-color: #333333;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+#wrn1_popup, #wrn2_popup, #wrn3_popup{
+    position: absolute;
+    padding: 5px;
+    background-color: #333333;
+    height: auto;
+    opacity: 0.8;
+    border-radius: 4px;
+    z-index: 8;
+    box-shadow: 0 0 10px;
+    display: none;
+}
+#wrn1_popup:hover{
+    opacity: 1;
+}
+#wrn2_popup:hover{
+    opacity: 1;
+}
+#wrn3_popup:hover{
+    opacity: 1;
+}
+.wrn_title{
+    float: left;
+    width: 96%;
+    height: auto;
+    font-family: GEO_M;
+    color: #FFF;
+    text-align: center;
+    padding: 4%;
+    text-align: center;
+}
+#wrn1_popup button{
+    width: 80%;
+    color: #FFF;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 100%;
+    margin-left: 10%;
+}
+#wrn1_popup button:hover{
+    background-color: #000;
+}
+#wrn2_popup button{
+    width: 80%;
+    color: #FFF;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 100%;
+    margin-left: 10%;
+}
+#wrn2_popup button:hover{
+    background-color: #000;
+}
+#wrn3_popup button{
+    width: 80%;
+    color: #FFF;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 100%;
+    margin-left: 10%;
+}
+#wrn3_popup button:hover{
+    background-color: #000;
+}
+#terminate{
+    position: absolute;
+    background-color: #20633c;
+    border-radius: 20px;
+    border: 2px solid #aaaaaa;
+    z-index: 999999;
+    display: none;
+    color: #EEE;
+    font-family: GEO_M;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+#terminate span{
+    margin-top: 2%;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    color: #FF9000;
+}
+#pouse_game{
+    position: fixed;
+    top: calc(100% - 125px);
+    left: 420px;
+    width: 64px;
+    height: 64px;
+    background-image: url("../img/pause.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 99;
+}
+#pouse_game:hover{
+    opacity: 1;
+}
+.jokerclose{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -10px;
+    right: -10px;
+    background-image: url("../img/jokerclose.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+    z-index: 20;
+}
+#settings_wp{
+    position: absolute;
+    height: auto;
+    background-color: #222;
+    color: #F5F5F5;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 0 10px #000;
+    display: none;
+    padding: 10px;
+    font-family: GEO_M;
+    opacity: 0.95;
+}
+#settings_wp h3{
+    color: #FF8A01;
+}
+#settings_wp .changebg{
+    float: left;
+    width: 100%;
+    height: 26%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#settings_wp .btn{
+    float: left;
+    width: calc(100% - 10px);
+    height: 30px;
+    background-color: #555555;
+    color: #999999;
+    padding-left: 10px;
+    border-radius: 10px;
+    line-height: 32px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+#settings_wp .btn:hover{
+    background-color: #666666;
+}
+#settings_wp .save_btn{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    background-color: #cc5500;
+    margin-top: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#settings_wp .save_btn:hover{
+    background-color: #FF8A01;
+}
+#settings_wp .option{
+    width: 16%;
+    height: 50px;
+    border-radius: 6px;
+    border: 2px solid #CCCCCC;
+    cursor: pointer;
+}
+#settings_wp .option:hover{
+    border: 2px solid #FF8A01;
+}
+#settings_wp .cardoption{
+    height: 90%;
+    margin: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#settings_wp .cardoption:hover {
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #E67E22;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #E67E22;
+}

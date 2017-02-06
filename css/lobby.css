@@ -1,0 +1,497 @@
+@font-face {
+    font-family: GEO_M;
+    src: url(../fonts/GEO_M.ttf);
+}
+@font-face {
+    font-family: Lari;
+    src: url(../fonts/Lari.ttf);
+}
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow: hidden;
+    background-color: #1f1f1f;
+}
+.tophead{
+	position: absolute;
+	left: 0;
+    top: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #ffca2a;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%
+	height: auto;
+}
+.header{
+	width: 100%;
+	height: 115px;
+}
+.logo{
+	float: left;
+	width: 320px;
+	height: 38px;
+	margin-left: 35px;
+	margin-top: 30px;
+	background-image: url(../img/logo.png);
+}
+.banner{
+    position: absolute;
+    left: 40%;
+    top: 20px;
+    width: 328px;
+    height: 56px;
+    background-image: url("../img/banner.png");
+    padding: 5px;
+    padding-left: 55px;
+    color: #A65500;
+    font-family: GEO_M;
+    display: none;
+}
+.banner .title{
+    float: left;
+    width: 100%;
+    height: 20px;
+    font-weight: bold;
+}
+.banner .msg{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+}
+.toppanel{
+	float: right;
+	margin-top: 40px;
+	margin-right: 20px;
+	width: 330px;
+	height: auto;
+}
+.toppanel .cashier_btn{
+	float: left;
+	width: 82px;
+	height: 32px;
+	background-image: url(../img/cashier0.png);
+	cursor: pointer;
+}
+.toppanel .cashier_btn:hover{
+	background-image: url(../img/cashier1.png);
+}
+.toppanel .warn_btn{
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/warn0.png);
+	cursor: pointer;
+}
+.toppanel .warn_btn:hover{
+	background-image: url(../img/warn1.png);
+}
+.toppanel .setting_btn{
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/settings0.png);
+	cursor: pointer;
+}
+.toppanel .setting_btn:hover{
+	background-image: url(../img/settings1.png);
+}
+.toppanel .fullscreen_btn{
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/fullscreen0.png);
+	cursor: pointer;
+}
+.toppanel .fullscreen_btn:hover{
+	background-image: url(../img/fullscreen1.png);
+}
+.toppanel .close_btn{
+	float: left;
+	margin-left: 20px;
+	margin-top: 0px;
+	width: 91px;
+	height: 30px;
+	background-image: url(../img/close0.png);
+	cursor: pointer;
+}
+.toppanel .close_btn:hover{
+	background-image: url(../img/close1.png);
+}
+.menu_WP{
+	float: left;
+	margin-left: -310px;
+	margin-top: 82px;
+	width: auto;
+	height: 33px;
+}
+.menu_WP #Menu_Game_BTN{
+	position: relative;
+	float: left;
+	margin-left: -10px;
+	width: 123px;
+	height: 33px;
+	background-image: url(../img/menu_game_btn.png);
+	z-index: 3;
+}
+.menu_WP #Menu_Tourn_BTN{
+	position: relative;
+	float: left;
+	width: 221px;
+	height: 33px;
+	margin-left: -20px;
+	background-image: url(../img/menu_tourn_btn_hover.png);
+	z-index: 2;
+}
+.menu_WP #Menu_Cash_BTN{
+	position: relative;
+	float: left;
+	width: 183px;
+	height: 33px;
+	margin-left: -20px;
+	background-image: url(../img/menu_cash_btn_hover.png);
+	z-index: 1;
+}
+.bottom_liner{
+	position: relative;
+	top: 114px;
+	left: 36px;
+	width: calc(100% - 70px);
+	height: 3px;
+	z-index: 10;
+	background-color: #FFA319;
+}
+.content_WP{
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 70px);
+	height: calc(100% - 130px);
+	background-color: #363636;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    box-shadow: 0 0 10px 5px #000;
+} 
+.footer{
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 90px);
+	height: 30px;
+	border-top: 1px solid #1f1f1f;
+	background: -webkit-linear-gradient(#3b3b3b, #2e2e2e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#3b3b3b, #2e2e2e); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#3b3b3b, #2e2e2e); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#3b3b3b, #2e2e2e); /* Standard syntax */
+	color: #666;
+	line-height: 30px;
+	font-family: 'PT Sans', sans-serif;
+	padding-left: 20px;
+    box-shadow: 0 5px 10px 5px #000;
+}
+.Cont_top{
+	float: left;
+	width: 100%;
+	height: 90px;
+	background-image: url(../img/topbg.png);
+	background-size: 100% 100%;
+}
+.Cont_top .avatar_WP{
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	border: 3px solid #4c4c4c;
+	background-color: #15a667;
+	margin-left: 40px;
+	margin-top: 13px;
+}
+.Cont_top .UserName_WP{
+	float: left;
+	width: 200px;
+	height: 26px;
+	color: #dadada;
+	font-family: GEO_M;
+	margin-top: 20px;
+}
+.Cont_top .mid{
+	float: left;
+	width: 200px;
+	height: 1px;
+	background-image: url(../img/liner.png);
+	background-repeat: no-repeat;
+}
+.Cont_top .User_info_WP{
+	float: left;
+	width: 200px;
+	height: 90px;
+	margin-left: 16px;
+}
+.Cont_top .Balance_WP{
+	float: left;
+	width: 300px;
+	height: 20px;
+	font-family: GEO_M;
+	color: #dadada;
+	margin-top: 6px;
+}
+.Cont_top button{
+	color: #999;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	font-family: GEO_M;
+	height: 34px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 10px;
+	border: 1px solid #666;
+	cursor: pointer;
+	background: -webkit-linear-gradient(#131313, #242424); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#131313, #242424); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#131313, #242424); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#131313, #242424); /* Standard syntax */
+}
+.Cont_top button:hover{
+	background: -webkit-linear-gradient(#242424, #131313); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#242424, #131313); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#242424, #131313); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#242424, #131313); /* Standard syntax */
+}
+.Gear_WP{
+	position: fixed;
+    top: 240px;
+	width: 1850px;
+	height: 800px;
+
+}
+.Gear_WP .Left_Gear_WP{
+	float: left;
+	width: 1110px;
+	height: 800px;
+}
+.Gear_WP .Right_Gear_WP{
+	float: left;
+	width: 740px;
+	height: 800px;
+}
+.Gear_WP .Left_Gear_WP .Filter{
+	float: right;
+	width: 40%;
+	height: 35px;
+	border-bottom: 3px solid #ffac2a;
+	font-family: GEO_M;
+	color: #CCC;
+	font-size: 24px;
+	cursor: default;
+}
+.Gear_WP .Left_Gear_WP .Gear_Filter{
+	float: left;
+	width: 100%;
+	height: 33px;
+	margin-top: 20px;
+}
+.Each_Filter_WP{
+	float: right;
+	width: auto;
+	height: 100%;
+	font-family: GEO_M;
+    font-size: 13px;
+	color: #FFF;
+	background-image: url('../img/optionbg.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.mid_filer{
+	float: left;
+	width: 1px;
+	height: 50%;
+	background-color: #666;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.Filter_Title{
+	float: left;
+	width: auto;
+	height: 100%;
+	cursor: default;
+}
+.Option_Label{
+	float: left;
+	width: auto;
+	color: #ffac2a;
+	font-family: GEO_M;
+	cursor: default;
+}
+.Option_Label span{
+	margin-left: 2px;
+	font-family: Lari;
+}
+.checkbox{
+	float: left;
+	border-radius: 4px;
+	width: 18px;
+	height: 18px;
+	background-image: url('../img/checkbox0.png');
+	margin-left: 10px;
+	margin-top: -2px;
+	cursor: pointer;
+}
+.checkbox:hover{
+	background-image: url('../img/checkbox05.png');
+}
+.checkbox1{
+	float: left;
+	border-radius: 4px;
+	width: 18px;
+	height: 18px;
+	background-image: url('../img/checkbox1.png');
+	margin-left: 10px;
+	margin-top: -2px;
+	cursor: pointer;
+}
+.checkbox1:hover{
+	background-image: url('../img/checkbox05.png');
+}
+.checkbox0{
+	float: left;
+	border-radius: 4px;
+	width: 18px;
+	height: 18px;
+	background-image: url('../img/checkbox00.png');
+	margin-left: 10px;
+	margin-top: -2px;
+}
+.lines_WP{
+	float: left;
+	width: 25%;
+	height: 100%;
+	min-height: 30%;
+}
+.playbtn_WP{
+	float: left;
+    margin-top: 2%;
+	width: 74%;
+	height: 74%;
+} 
+.ActionTable{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	top: calc(100% - 200px);
+	width: auto;
+	height: 20%;
+}
+.ActionTable .ActionTableText{
+	float: left;
+	width: 100%;
+	height: 20%;
+	color: #CCC;
+	font-family: GEO_M;
+}
+.ActionTable .ActionTableBTN{
+	float: left;
+	margin-top: 4px;
+	font-size: 14px;
+	font-family: GEO_M;
+	color: #CCC;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	text-shadow: 1px 1px 3px #333;
+	line-height: 370%;
+	cursor: pointer;
+    margin-right: 6px;
+    background-image: url("../img/action_table_btn.png");
+    background-size: 50px 50px;
+}
+.ActionTable .ActionTableBTN:hover{
+    background-image: url("../img/action_table_btn1.png");
+}
+
+.ActionTable .ActionTableBTN[title]:hover:after {
+    content: attr(title);
+    padding: 14px 2px;
+    color: #333;
+    position: relative;
+    left: 55px;
+    z-index: 20;
+    white-space: nowrap;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 0px 4px #222;
+    -webkit-box-shadow: 0px 0px 4px #222;
+    box-shadow: 0px 0px 4px #222;
+    background-image: -moz-linear-gradient(top, #ffa42a, #ffc32a);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffa42a),color-stop(1, #ffc32a));
+    background-image: -webkit-linear-gradient(top, #ffa42a, #ffc32a);
+    background-image: -moz-linear-gradient(top, #ffa42a, #ffc32a);
+    background-image: -ms-linear-gradient(top, #ffa42a, #ffc32a);
+    background-image: -o-linear-gradient(top, #ffa42a, #ffc32a);
+}
+#line1{
+    position: absolute;
+    background-image: url("../img/line1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#line2{
+    position: absolute;
+    background-image: url("../img/line2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#line3{
+    position: absolute;
+    background-image: url("../img/line3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#line4{
+    position: absolute;
+    /*background-image: url("../img/line1.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#line5{
+    position: absolute;
+    /*background-image: url("../img/line1.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#line6{
+    position: absolute;
+    /*background-image: url("../img/line1.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.error_text{
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    width: 740px;
+    height: 100px;
+    color: red;
+    font-family: GEO_M;
+    text-align: center;
+    font-size: 20px;
+    z-index: 999;
+    text-shadow: 2px 2px 5px #000;
+}
+.right_gear_Wrapper{
+    float: left;
+    width: 740px;
+    height: auto;
+}
